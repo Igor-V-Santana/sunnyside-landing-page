@@ -1,0 +1,63 @@
+.container-projetos{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "projeto1 projeto2 projeto3 projeto4";
+}
+
+.projeto1{
+    grid-area: projeto1;
+    background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projeto2{
+    grid-area: projeto2;
+    background-image: url(images/desktop/image-gallery-orange.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.projeto3{
+    grid-area: projeto3;
+    background-image: url(images/desktop/image-gallery-cone.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.projeto4{
+    grid-area: projeto4;
+    background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+@media(max-width: 800px){
+    .container-projetos{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 90vh;
+        grid-template-areas: 
+        "projeto1 projeto2"
+        "projeto3 projeto4";
+    }
+    .projeto1{
+        background-image: url(images/mobile/image-gallery-milkbottles.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .projeto2{
+        background-image: url(images/mobile/image-gallery-orange.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .projeto3{
+        background-image: url(images/mobile/image-gallery-cone.jpg);
+    }
+    .projeto4{
+        background-image: url(images/mobile/image-gallery-sugar-cubes.jpg);
+    }
+}
